@@ -10,6 +10,7 @@
       <th>Editora</th>
       <th>Edicao</th>
       <th>Palavras chave</th>
+      <th>ABNT</th>
       <th></th>
       <th></th>
       <th></th>
@@ -26,6 +27,7 @@
         <td><%= livro.editora %></td>
         <td><%= livro.edicao %></td>
         <td><%= livro.palavras_chave %></td>
+        <td><%= livro.abnt %></td>
         <td><%= link_to 'Show', livro %></td>
         <td><%= link_to 'Edit', edit_livro_path(livro) %></td>
         <td><%= link_to 'Destroy', livro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
