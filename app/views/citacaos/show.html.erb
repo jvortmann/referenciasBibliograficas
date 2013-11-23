@@ -17,7 +17,12 @@
 
 <p>
   <strong>Livro:</strong>
-  <%= @citacao.livro %>
+  <%= @citacao.livro.abnt %>
+</p>
+
+<p>
+  <strong>Formatado:</strong>
+  <%= @citacao.formata %>
 </p>
 
 <%= link_to 'Edit', edit_citacao_path(@citacao) %> |
