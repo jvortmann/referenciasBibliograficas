@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Trecho:</strong>
+  <%= @citacao.trecho %>
+</p>
+
+<p>
+  <strong>Pagina inicial:</strong>
+  <%= @citacao.pagina_inicial %>
+</p>
+
+<p>
+  <strong>Palavras chave:</strong>
+  <%= @citacao.palavras_chave %>
+</p>
+
+<p>
+  <strong>Livro:</strong>
+  <%= @citacao.livro %>
+</p>
+
+<%= link_to 'Edit', edit_citacao_path(@citacao) %> |
+<%= link_to 'Back', citacaos_path %>

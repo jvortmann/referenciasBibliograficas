@@ -1,0 +1,7 @@
+<h1>Busca</h1>
+
+<%= form_tag "/busca/results", method: 'get' do %>
+  <%= label_tag(:termo, "Palavra chave:") %>
+  <%= text_field_tag(:termo) %>
+  <%= submit_tag("Vai!") %>
+<% end %>

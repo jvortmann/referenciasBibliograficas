@@ -1,0 +1,8 @@
+<h1>Livros com o termo "<%= params[:termo] %>"</h1>
+
+<% for livro in @livros %>
+  <div>
+    "<%= livro.titulo %>" - 
+    <%= livro.palavras_chave %>
+  </div>
+<% end %>

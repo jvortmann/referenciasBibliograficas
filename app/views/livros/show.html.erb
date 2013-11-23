@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @livro.titulo %></h1>
+
+<p>
+  <strong>Ano da publicacao:</strong>
+  <%= @livro.ano_da_publicacao %>
+</p>
+
+<p>
+  <strong>Autores:</strong>
+  <%= @livro.autores %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @livro.cidade %>
+</p>
+
+<p>
+  <strong>Editora:</strong>
+  <%= @livro.editora %>
+</p>
+
+<p>
+  <strong>Edicao:</strong>
+  <%= @livro.edicao %>
+</p>
+
+<p>
+  <strong>Palavras chave:</strong>
+  <%= @livro.palavras_chave %>
+</p>
+
+<h2>Citações</h2>
+
+<% for citacao in @livro.citacaos %>
+  <div>"<%= citacao.trecho %>"</div>
+<% end %>
+
+<%= link_to 'Edit', edit_livro_path(@livro) %> |
+<%= link_to 'Back', livros_path %>

@@ -1,0 +1,33 @@
+<%= form_for(@citacao) do |f| %>
+  <% if @citacao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@citacao.errors.count, "error") %> prohibited this citacao from being saved:</h2>
+
+      <ul>
+      <% @citacao.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :trecho %><br>
+    <%= f.text_area :trecho %>
+  </div>
+  <div class="field">
+    <%= f.label :pagina_inicial %><br>
+    <%= f.number_field :pagina_inicial %>
+  </div>
+  <div class="field">
+    <%= f.label :palavras_chave %><br>
+    <%= f.text_field :palavras_chave %>
+  </div>
+  <div class="field">
+    <%= f.label :livro_id %><br>
+    <%= f.collection_select :livro_id, @livros, :id, :titulo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

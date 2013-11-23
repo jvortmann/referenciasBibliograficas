@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trecho: MyText
+  pagina_inicial: 1
+  palavras_chave: MyString
+  livro_id: 
+
+two:
+  trecho: MyText
+  pagina_inicial: 1
+  palavras_chave: MyString
+  livro_id: 
