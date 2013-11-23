@@ -4,6 +4,6 @@ class Citacao < ActiveRecord::Base
   validates :livro, presence: true
 
   def formata
-  	"#{self.trecho} [#{self.livro.autores.upcase}, #{self.livro.ano_da_publicacao}]"
+  	"#{self.trecho} [#{self.livro.sobrenome.upcase}, #{self.livro.primeiro_nome}. #{self.livro.ano_da_publicacao}]"
   end
 end
