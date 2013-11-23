@@ -40,7 +40,7 @@
 <h2>Citações</h2>
 
 <% for citacao in @livro.citacaos %>
-  <div>"<%= citacao.trecho %>"</div>
+  <div>"<%= citacao.formata %>"</div>
 <% end %>
 
 <%= link_to 'Edit', edit_livro_path(@livro) %> |
