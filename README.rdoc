@@ -1,4 +1,8 @@
-== README
+== Referencias Bibliograficas
+
+Essa é a aplicação que foi desenvolvida durante o RailsGirls 2013
+
+TODO: Adicionar mais informações (abaixo)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
